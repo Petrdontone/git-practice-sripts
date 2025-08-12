@@ -38,5 +38,7 @@ jobs:
     environment: production 
     needs: deploy-to-staging 
     steps:
+      - name: test steps
+        run: ls -la
       - name: Start sh ls script
         run: sh ls_script.sh
