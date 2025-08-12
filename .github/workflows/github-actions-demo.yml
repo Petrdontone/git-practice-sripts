@@ -38,6 +38,7 @@ jobs:
     environment: production 
     needs: deploy-to-staging 
     steps:
+      - uses: actions/checkout@v4
       - name: test steps
         run: ls -la
       - name: Start sh ls script
