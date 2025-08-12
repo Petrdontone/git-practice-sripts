@@ -12,6 +12,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build application
         run: echo "Building application..." 
+      - name: ls command
+        run: ls -la
       - name: Start script build
         run: sh build_script.sh
 
